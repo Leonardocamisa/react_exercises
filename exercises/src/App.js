@@ -9,7 +9,7 @@ export class App extends React.Component {
             <div>
                 <Welcome name={this.defaultProps} />
                 <Age age={this.defaultProps} />
-                <Counter />
+                <Counter initialValue={100} incrementBy={4} timeout={1000}/>
             </div> 
         )
     }
