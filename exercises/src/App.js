@@ -1,6 +1,6 @@
 import React from 'react'
-import { Helloworld } from './HelloWorld'
-import { External } from './External'
+import Helloworld from './HelloWorld'
+import External from './External'
 
 
 export class App extends React.Component {
