@@ -1,6 +1,6 @@
 import React from "react"
 
-export class Age extends React.Component {
+class Age extends React.Component {
     render (){
      return  (this.props.age ) ? <p>Your age is, {this.props.age}</p>  : <p></p>   
     }
@@ -9,3 +9,5 @@ export class Age extends React.Component {
     //     age: 24,
     // }
 }
+
+export default Age;

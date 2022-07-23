@@ -1,8 +1,8 @@
 import React from 'react'
-import { Welcome } from './Welcome'
-import { Age } from './Age'
+import Welcome from './Welcome'
+import Age from './Age'
 
-export class App extends React.Component {
+class App extends React.Component {
     render() {
         return (
             <div>
@@ -12,3 +12,5 @@ export class App extends React.Component {
         )
     }
 }
+
+export default App;
