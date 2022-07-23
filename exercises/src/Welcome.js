@@ -1,6 +1,6 @@
 import React from "react";
 
-export class Welcome extends React.Component {
+class Welcome extends React.Component {
    render() {
     return <div>
     <p>Hello, <strong>{this.props.name}!</strong></p>
@@ -13,3 +13,4 @@ export class Welcome extends React.Component {
    }
 }
     
+export default Welcome;
