@@ -1,14 +1,17 @@
-import React from "react"
-import Login from "./Login"
+import React from "react";
+import UncontrolledLogin from "./UncontrolledLogin";
 
-
-export default class App extends React.Component {
-    render () {
-        return <>
-            <Login />
-            </>
-    }
+class App extends React.Component {
+  render() {
+    return (
+        <>
+        <div>
+          <UncontrolledLogin/>
+        </div>
+        </>
+    );
+  }
 }
 
-
+export default App;
 
