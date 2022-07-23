@@ -9,4 +9,6 @@ export class Welcome extends React.Component {
       name: "Giovanni",
    }
 }
+
+export default Welcome;
     
