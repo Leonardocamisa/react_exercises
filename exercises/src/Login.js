@@ -1,6 +1,6 @@
 import React from "react";
 
-export default class Login extends React.Component {
+class Login extends React.Component {
 
         state = {
             username : "",
@@ -42,3 +42,4 @@ export default class Login extends React.Component {
             )
         }
 }
+export default Login;
