@@ -32,8 +32,11 @@ class UncontrolledLogin extends React.Component {
 			remember: true,
 			compiled: false,
 		});
-       
 	};
+
+    componentDidMount(){
+        this.searchInput.focus()
+    }
 
 	render() {
 		return (
@@ -41,7 +44,7 @@ class UncontrolledLogin extends React.Component {
 				<form>
 					<div>
 						<h3>UNCONTROLLED LOGIN</h3>
-						<input type="text" name="username" onChange={this.eventHandler} />
+						<input ref={inputEl => (this.searchInput = inputEl)} type="text" name="username" onChange={this.eventHandler} />
 						<input type="password" name="password" onChange={this.eventHandler} />
 						<input type="checkbox" name="remember" onChange={this.eventHandler} />
 					</div>
