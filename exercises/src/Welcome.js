@@ -1,6 +1,6 @@
 import React from "react";
 
-export class Welcome extends React.Component {
+class Welcome extends React.Component {
    render() {
     return <div>
     <p>Hello, {this.props.name}!</p>
@@ -9,7 +9,8 @@ export class Welcome extends React.Component {
    }
    
    static defaultProps = {
-      name: "Giovanni",
+      name: "Fantozzi",
    }
 }
-    
+
+export default Welcome;
