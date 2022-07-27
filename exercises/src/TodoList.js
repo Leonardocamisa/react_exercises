@@ -16,7 +16,7 @@ class TodoList extends React.Component {
 
     addItem = (event) => {
         this.setState({
-            newItem : event.target.value
+            newItems : event.target.value
         })
     }
 
@@ -25,8 +25,8 @@ class TodoList extends React.Component {
             <>
             <div>
                 <h1>Lista</h1>
-                <input type='text' onChange={this.addItem} value={this.state.newItem} />
-                <button onClick={this.addEvent} disabled={!this.state.newItem}>aggiungi</button>
+                <input type='text' onChange={this.addItem} value={this.state.newItems} />
+                <button onClick={this.addEvent} disabled={!this.state.newItems}>aggiungi</button>
                 <ul>
                     {this.state.items.map((el,i) => <li key={el+i}>{el}</li>)}
                 </ul>
