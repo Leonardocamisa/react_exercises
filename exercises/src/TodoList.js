@@ -20,6 +20,12 @@ class TodoList extends React.Component {
         })
     }
 
+    resetItems = () => {
+        this.setState({
+            items : []
+        })
+    }
+
     render(){
         return(
             <>
@@ -27,6 +33,7 @@ class TodoList extends React.Component {
                 <h1>Lista</h1>
                 <input type='text' onChange={this.addItem} value={this.state.newItems} />
                 <button onClick={this.addEvent} disabled={!this.state.newItems}>aggiungi</button>
+                <button onClick={this.resetItems}>Ripulisci</button>
                 <ul>
                     {this.state.items.map((el,i) => <li key={el+i}>{el}</li>)}
                 </ul>
