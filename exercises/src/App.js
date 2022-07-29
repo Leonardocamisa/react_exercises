@@ -1,13 +1,14 @@
 import React from "react";
-import Login from "./Login";
+import Container from "./Container";
+import Counter from "./Counter";
 
 class App extends React.Component {
   render() {
     return (
         <>
-        <div>
-          <Login onLogin = {this.onLogin}/>
-        </div>
+          <Container>
+            <Counter />
+          </Container>
         </>
     );
   }
