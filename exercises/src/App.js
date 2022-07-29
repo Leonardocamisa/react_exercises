@@ -6,7 +6,7 @@ class App extends React.Component {
   render() {
     return (
         <>
-          <Container>
+          <Container title='bellissimo titolo'>
             <Counter />
           </Container>
         </>
