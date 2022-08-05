@@ -1,14 +1,16 @@
 import React from "react";
-import {ClickCounter} from "./ClickCounter"
+import Login from "./Login";
 
+  const onLogin = (state) => {
+console.log(state)
+  }
 
-export class App extends React.Component {
-
-  render() {
+  export function App () {
     return (
-      <>
-		<ClickCounter/>
-      </>
+        <>
+        <div>
+          <Login onLogin = {onLogin}/>
+        </div>
+        </>
     );
   }
-}
