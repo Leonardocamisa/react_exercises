@@ -1,8 +1,6 @@
 import React from "react";
+import { Welcome } from "./Welcome";
 
-import { DisplayLanguage } from "./DisplayLanguage";
-
-import { languageContext } from "./LanguageContext";
 
 export class App extends React.Component {
   state = {
@@ -21,9 +19,7 @@ export class App extends React.Component {
   render() {
     return (
       <>
-        <languageContext.Provider value={this.state.language}>
-          <DisplayLanguage onChange={this.handleLenguageChange} />
-        </languageContext.Provider>
+        <Welcome />
       </>
     );
   }
