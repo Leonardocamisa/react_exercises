@@ -1,26 +1,19 @@
 import React from "react";
 
 export default class InteractiveWelcome extends React.Component {
-
   state = {
     res : ""
   }
 
   eventHandler = (event) => {
-
-    this.setState(
-       {
-      res : event.target.value
-       }
-    ) 
+    this.setState({res : event.target.value})
   };
   
   render () {
-    return ( <div>
+    return <div>
               <Welcome name={this.state.res} />
-              <input type="text" onChange={this.eventHandler} />
+              <input type="text" value={this.state.value} onChange={this.eventHandler} />
             </div>
-    );
   }
 }
 
