@@ -1,16 +1,16 @@
 import React from "react";
-import Login from "./Login";
+import {ClickCounter} from "./ClickCounter"
 
-  const onLogin = (state) => {
-console.log(state)
-  }
 
-  export function App () {
-    return (
-        <>
-        <div>
-          <Login onLogin = {onLogin}/>
-        </div>
-        </>
-    );
-  }
+const onCounterChange = (state) => {
+  console.log(state);
+}
+
+export function App() {
+  return (
+    <>
+      <div>
+        <ClickCounter onCounterChange = {onCounterChange}/>
+      </div>
+    </>
+  );}
