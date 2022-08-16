@@ -1,13 +1,11 @@
-import React from 'react'
-import { Welcome } from './Welcome'
-import { Age } from './Age'
+import React from 'react';
+import Welcome from './Welcome';
 
 export class App extends React.Component {
     render() {
         return (
             <div>
-                <Welcome name={this.defaultProps} />
-                <Age age={this.defaultProps} />
+                <Welcome name={"John"} age={45}/>
             </div> 
         )
     }
