@@ -15,11 +15,12 @@ loginButtonClick = () => {
         const type = event.target.type
         const checked = event.target.checked
 
-        this.setState({
-            [name]: type === 'checkbox'
+        this.setState(prevState => {
+            return {...prevState,
+                [name]: type === 'checkbox'
             ? checked 
             : value
-        })
+    }})
     }
 
     render() {
