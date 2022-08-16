@@ -2,7 +2,7 @@ import React from "react";
 
 class Age extends React.Component {
     render (){
-        return <p>Your age is, 25</p>
+        return <p>Your age is, {this.props.age}</p>
     }
 }
 
