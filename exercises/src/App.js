@@ -1,13 +1,13 @@
 import React from 'react'
 import Welcome from './Welcome'
 
-
-class App extends React.Component {
+export default class App extends React.Component {
     render() {
         return (
-                <Welcome name={this.defaultProps} age= '25'/>
+            <div>
+                <h1>Primo elemento</h1>
+                <Welcome name={<strong>Giovanni</strong>} age={24}/>
+            </div>
         )
     }
 }
-
-export default App;
