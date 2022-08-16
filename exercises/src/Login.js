@@ -10,13 +10,14 @@ class Login extends React.Component {
         }
     
     eventHandler = (event) => {
-            this.setState(
-                {
+            this.setState(prevState => {
+                return {
+                    ...prevState,
                     [event.target.name] : event.target.type === "checkbox" ? event.target.checked : event.target.value,
                     compiled: this.state.username !== "" && this.state.password !== "" ? true : false
-                }
-            );
-        };
+                }})
+    }
+        
 
         eventReset = () => {
             this.setState(
