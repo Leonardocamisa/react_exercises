@@ -1,20 +1,19 @@
 import React from "react";
 
-
 export default class Login extends React.Component {
 
+    state = {
+        username : "",
+        password : "",
+        remember : true
+        }   
+    
         eventHandler = (event) => {
-            this.setState(
-                {
-                    [event.target.name] : event.target.type === 'checkbox' ? event.target.checked : event.target.value
-                }
+            this.setState(prevState => {
+            return { ...prevState,
+             [event.target.name] : event.target.type === 'checkbox' ? event.target.checked : event.target.value}
+            }
             )
-        }
-
-        state = {
-            username : "",
-            password : "",
-            remember : true
         }
 
         componentDidUpdate(){
