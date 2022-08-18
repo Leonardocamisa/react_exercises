@@ -1,12 +1,11 @@
 import React from "react";
-
-import Counter from "./Counter";
+import GithubUser from "./GitHubUser";
 
 export function App() {
   return (
     <>
       <div>
-        <Counter/>
+        <GithubUser username= "Leonardocamisa"/>
       </div>
     </>
   );}
