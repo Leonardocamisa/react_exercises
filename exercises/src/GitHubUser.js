@@ -6,7 +6,7 @@ export default function GitHubUser ({username}){
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null)
 
-    async function fetchinGithub(username){
+    async function fetchGithub(username){
 
         setLoading(true)
         setError(null)
@@ -24,7 +24,7 @@ export default function GitHubUser ({username}){
     }
 
     useEffect(()=>{
-        fetchinGithub(username)
+        fetchGithub(username)
     }, [username])
 
     return(
