@@ -1,18 +1,13 @@
 import React from "react";
-import Login from "./Login";
-
-const onLogin = (state) => {
-  console.log(state);
-};
+import GithubUser from "./GithubUser";
 
 const App = () => {
   return (
     <>
       <div>
-        <Login onLogin={onLogin} />
+        <GithubUser username= "popjiiubuu"/>
       </div>
     </>
-  );
-}
+  );}
 
-export default App;
+export default App;  
