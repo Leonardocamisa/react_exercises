@@ -5,7 +5,7 @@ const App = () => {
   return (
     <>
       <div>
-        <GithubUser username= "popjiiubuu"/>
+        <GithubUser username= "Leonardocamisa"/>
       </div>
     </>
   );}
