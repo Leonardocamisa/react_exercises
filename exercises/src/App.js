@@ -1,11 +1,11 @@
 import React from "react";
-import GithubUser from "./GithubUser";
+import CarDetails from "./CarDetails";
 
 const App = () => {
   return (
     <>
       <div>
-        <GithubUser username= "Leonardocamisa"/>
+        <CarDetails initialData = {{model : "BMW", year : "2020", color : "blue"}}/>
       </div>
     </>
   );
