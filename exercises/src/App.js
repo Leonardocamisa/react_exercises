@@ -8,6 +8,7 @@ const App = () => {
         <GithubUser username= "Leonardocamisa"/>
       </div>
     </>
-  );}
+  );
+}
 
 export default App;  

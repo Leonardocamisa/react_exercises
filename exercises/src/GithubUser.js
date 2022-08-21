@@ -2,11 +2,11 @@ import useGithubUser from "./useGithubUser";
 
 
 const GithubUser = ({ username }) => {
-  const {data, error} = useGithubUser({username})
-
+  const {data, error, status} = useGithubUser({username})
   return (
     <>
-    {data !== {} ? <h1>{data.login}</h1> : <h1>{error.message}</h1>}
+    {!status && <h1>Loading...</h1>}
+    {status === 200 ? <h1>{data.login}</h1> : <h1>{error.message}</h1>}
     </>
   );
 }
