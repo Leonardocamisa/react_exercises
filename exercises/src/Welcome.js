@@ -1,13 +1,9 @@
-import React from 'react';
-import { Age } from './Age';
-import { Container } from './Container';
+import {Link} from 'react-router-dom'
 
-
-export function Welcome({name = 'Jimmy', age=19}){
+export function Welcome({name}) {
     return(
-        <Container title="This is a title!">
-            <p> Hello, {name}</p>
-            <Age age={age} />
-        </Container>
-    )
+    <div>
+        <Link to= "/counter">Counter</Link>
+        <h1>HELLO {!name ? "WORLD" : name}</h1>
+    </div>)
 }
