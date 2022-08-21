@@ -5,6 +5,7 @@ import { ClickCounter } from "./Counter";
 import { ShowGithubUser } from "./ShowGithubUser";
 import { useState } from "react";
 import { NotFound } from "./NotFound";
+import { GithubUserList } from "./GithubUserList";
 
 export function App() {
 
@@ -32,12 +33,17 @@ export function App() {
             <input type="text" onKeyUp={(e)=>setUsernameValue(e.target.value)}/>
             <button onClick={handleNavigate}>USERNAME</button>
           </li>
+          <li>
+          <Link to={"/users"}>USERS</Link>
+          </li>
         </ul>
         <Routes>
-          <Route path="/" element={<Welcome name="ALEEEE" />}></Route>
-          <Route path="/counter" element={<ClickCounter />}></Route>
-          <Route path="/users/:username" element={<ShowGithubUser />} />
-          <Route path="/*" element = {<NotFound />}/>
+          <Route path="/" element={<Welcome name="ERIK" />}></Route>
+          <Route path="counter" element={<ClickCounter />}></Route>
+          <Route path="users" element={<GithubUserList />}>
+            <Route path=":username" element={<ShowGithubUser />} />
+          </Route>
+          <Route path="/*" element={<NotFound />} />
         </Routes>
       </div>
     </>
