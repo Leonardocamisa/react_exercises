@@ -1,5 +1,4 @@
 import { useState } from "react";
-import {Link} from 'react-router-dom'
 
 export function ClickCounter() {
 
@@ -12,7 +11,6 @@ export function ClickCounter() {
 
   return (
     <div>
-     <Link to="/" > Welcome</Link>
       <h1>Count : {count}</h1>
       <button onClick = {()=>eventHandler()}>Increase</button>
     </div>
