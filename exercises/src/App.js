@@ -22,7 +22,7 @@ export function App() {
   return (
     <>
       <div>
-        <ul>
+        <ul style={{ display: "flex", listStyleType: "none", gap: "20px" }}>
           <li>
             <Link to={"/"}>WELCOME</Link>
           </li>
