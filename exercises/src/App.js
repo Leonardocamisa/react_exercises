@@ -38,7 +38,7 @@ export function App() {
           </li>
         </ul>
         <Routes>
-          <Route path="/" element={<Welcome name="ERIK" />}></Route>
+          <Route path="/" element={<Welcome name="FRANCESCO" />}></Route>
           <Route path="counter" element={<ClickCounter />}></Route>
           <Route path="users" element={<GithubUserList />}>
           <Route index element= {<div>Add a user and select it</div>}/>
